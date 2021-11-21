@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+$primary-color : #4B85F0;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+}
+
+.btn {
+    border: none;
+    background-color: rgba(75,133,240,1);
+    border-radius: 4px;
+    text-transform: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #fff;
+    padding: 14px 30px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    &:hover{
+        background-color: rgb(103, 156, 255);
+    }
+}
+
+body{
+    font-family: 'Titillium Web', sans-serif;
+}
+
+header{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    .brand{
+        span{
+            font-weight: 800;
+        }
+    }
+    nav{
+        ul{
+            li{
+                display: inline-block;
+                
+                a{
+                    font-weight: 600;
+                    color: black;
+                    padding: 10px 15px;
+                    &:hover{
+                        border-bottom: solid 4px $primary-color;
+                        color: $primary-color;
+                    }
+                }
+                .active{
+                    border-bottom: solid 4px $primary-color;
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}
+
+.hero{
+    height: 80vh;
+    color: #fff;
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4%;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    // background-image: url('https://homepress.stylemixthemes.com/main/wp-content/uploads/sites/3/2021/03/property-img-1.jpg');
+    background-image: url('../../assets/location/appartement1.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: multiply;
+    .offer{
+        h1{
+            font-size:4rem;
+            font-weight: 400;
+            margin: 10px 0;
+        }
+        .prices{
+            margin: 10px 0;
+            font-size: 25px;
+            font-weight: 600;
+        }
+    }
+    .indication{
+        display: flex;
+        flex-direction: column;
+        button{
+            margin-left: 10px;
+            display: block;
+            border: solid white 1px;
+            background: none;
+            color: #fff;
+            border-radius: 100%;
+            padding: 10px 14px;
+            cursor: pointer;
+            transition: all 0.15s ease-out;
+            &:hover{
+                background-color: #fff;
+                color: black;
+            }
+        }.prev{
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.location, .vente{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .head{
+        width: 100%;
+        text-align: center;
+        margin: 20px 10px;
+    }
+    .foot{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 20px auto;
+    }
+    .cart{
+        width: 270px;
+        margin: 15px;
+        cursor: pointer;
+        background-color: #fff;
+        box-shadow: 0 1px 15px 1px rgba(128, 128, 128, 0.192);
+        border-radius: 5px;
+        transition: all 0.2s ease-in-out;
+        &:hover{
+            // transform: scale(1.1);
+            transform: translateY(-10px);
+        }
+        .illustration{
+            position: relative;
+
+            img{
+                border-radius: 5px 5px 0 0;
+                z-index: 8;
+                width: 100%;
+                height: 200px;
+                object-fit: fill;
+            }
+            input{
+                cursor: pointer;
+                font-size: 10px;
+                font-weight: 600;
+                color: #fff;
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                background-color: rgb(38, 190, 0);
+                padding: 5px;
+                border-radius: 5px;
+            }
+            .resume{
+                display: none;
+                transition:all 1s ease-in-out;
+                color: #fff;
+                background-color: #00000080;
+                position: absolute;
+                bottom: 7px;
+                text-align: center;
+                padding: 5px;
+            }
+        }
+        .description{
+            font-size: 14px;
+            padding: 10px;
+            h3{
+                font-weight: 500;
+            }
+            .rent-info{
+                display: flex;
+                justify-content: space-between;
+                .properties{
+                    font-size: 12px;
+                    display: flex;
+                    color: rgb(156, 156, 156);
+                    .prop{
+                        margin-right: 15px;
+                    }
+                }
+                h4{
+                    color: rgba(75,133,240,1);
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+
+footer{
+    .info-footer{
+        background-color: rgb(68, 68, 68) ;
+        padding: 30px 0 10px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: baseline;
+        color: #fff;
+        font-size: 0.8rem;
+        line-height: 170%;
+        h4{
+            font-size: 1rem;
+        }
+        li{
+            a{
+                color: #fff;
+            } 
+        }
+        .contact{
+            .brand{
+                font-size: 1.5rem;
+                font-weight: 600;
+            }
+            .social{
+                display: flex;
+                justify-content: space-between;
+                margin: 20px 0;
+                i{
+                    font-size: 1.5rem;
+                    background-color: rgba(255, 255, 255, 0.884);
+                    border-radius: 8px;
+                    padding: 5px;
+                    width: 45px;
+                    text-align: center;
+                }
+            }
+        }
+        .coordinate{
+            .mail{
+                margin: 10px 0;
+                font-weight: 700;
+            }
+        }
+        
+    }
+
+    .newsletter{
+        display: flex;
+        flex-direction: column;
+        padding: 0 10px;
+        .champ{
+            border: 1px solid rgb(196, 196, 196);
+            border-radius: 4px;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        [type="button"]{
+            @extend .btn;
+            margin: 10px 0;
+        }
+    }
+    .copyleft{
+        font-size: 0.8rem;
+        color: #fff;
+        background-color: black;
+        padding: 10px;
+        display: flex;
+        justify-content: space-around;
+        .author{
+            font-weight: 700;
+        }
+    }
+}
