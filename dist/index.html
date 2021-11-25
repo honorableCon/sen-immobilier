@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.min.css">
     <script src="utils.js"></script>
     <!-- <script src="https://unpkg.com/yombal-dom@1.0.2/utils.js" crossorigin="anonymous"></script> -->
-    <!-- <script src="https://kit.fontawesome.com/ea05a76d15.js" crossorigin="anonymous"></script> -->
+    <script src="https://kit.fontawesome.com/ea05a76d15.js" crossorigin="anonymous"></script>
     <title>Sen Immobilier</title>
 </head>
 <body>
@@ -43,7 +43,7 @@
         <div class="prices">
             250 000 FCFA
         </div>
-        <a href="#" class="btn">voir details</a>
+        <button href="#" class="btn">voir details</button>
     </div>
     <div class="indication">
         <button class="prev"> 
@@ -56,6 +56,14 @@
     </div>
 </div>
 
+<!-- =============================== recherche =============================== -->
+<form action="#">
+    <select name="type" id="type-appartement">
+        <option value="Appartement">Appartement</option>
+        <option value="Terrain">Terrain</option>
+        <option value="Maison">Maison</option>
+    </select>
+</form>
 
 <!-- =============================== location =============================== -->
 <div class="location">
@@ -71,7 +79,9 @@
             <p class="resume">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, beatae.
             </p>
-            <img src="../assets/location/appartement1.jpg" alt="image appartement">
+            <a class="image-to-detail" id="appartement1" href="details.html">
+                <img src="../assets/location/appartement1.jpg" alt="image appartement">
+            </a>
         </div>
         <div class="description">
             <h3>Contemporary studio</h3>
@@ -79,18 +89,18 @@
                 <div class="properties">
                     <div class="prop">
                         <i class="fa fa-bed" aria-hidden="true"></i>
-                        <span>4</span>
+                        <span class="bed">4</span>
                     </div>
                     <div class="prop">
                         <i class="fa fa-shower" aria-hidden="true"></i>
-                        <span>2</span>
+                        <span class="toilet">2</span>
                     </div>
                     <div class="prop">
                         <i class="fa fa-map-marker" aria-hidden="true"></i>
-                        <span>Dakar</span>
+                        <span class="location">Dakar</span>
                     </div>
                 </div>
-                <h4>25000FCFA</h4>
+                <h4 class="price">25000FCFA</h4>
             </div>
         </div>
     </div>
@@ -100,7 +110,9 @@
             <p class="resume">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, beatae.
             </p>
-            <img src="../assets/location/appartement1.jpg" alt="image appartement">
+            <a class="image-to-detail" id="appartement1" href="details.html">
+                <img src="../assets/location/appartement1.jpg" alt="image appartement">
+            </a>
         </div>
         <div class="description">
             <h3>Contemporary studio</h3>
@@ -108,18 +120,18 @@
                 <div class="properties">
                     <div class="prop">
                         <i class="fa fa-bed" aria-hidden="true"></i>
-                        <span>4</span>
+                        <span class="bed">4</span>
                     </div>
                     <div class="prop">
                         <i class="fa fa-shower" aria-hidden="true"></i>
-                        <span>2</span>
+                        <span class="toilet">2</span>
                     </div>
                     <div class="prop">
                         <i class="fa fa-map-marker" aria-hidden="true"></i>
-                        <span>Dakar</span>
+                        <span class="location">Dakar</span>
                     </div>
                 </div>
-                <h4>25000FCFA</h4>
+                <h4 class="price">25000FCFA</h4>
             </div>
         </div>
     </div>
@@ -129,7 +141,9 @@
             <p class="resume">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, beatae.
             </p>
-            <img src="../assets/location/appartement1.jpg" alt="image appartement">
+            <a class="image-to-detail" id="appartement1" href="details.html">
+                <img src="../assets/location/appartement1.jpg" alt="image appartement">
+            </a>
         </div>
         <div class="description">
             <h3>Contemporary studio</h3>
@@ -137,15 +151,15 @@
                 <div class="properties">
                     <div class="prop">
                         <i class="fa fa-bed" aria-hidden="true"></i>
-                        <span>4</span>
+                        <span class="bed">4</span>
                     </div>
                     <div class="prop">
                         <i class="fa fa-shower" aria-hidden="true"></i>
-                        <span>2</span>
+                        <span class="toilet">2</span>
                     </div>
                     <div class="prop">
                         <i class="fa fa-map-marker" aria-hidden="true"></i>
-                        <span>Dakar</span>
+                        <span class="location">Dakar</span>
                     </div>
                 </div>
                 <h4 href="#">25000FCFA</h4>
@@ -172,7 +186,9 @@
             <p class="resume">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, beatae.
             </p>
-            <img src="../assets/location/appartement1.jpg" alt="image appartement">
+            <a class="image-to-detail" id="appartement1" href="details.html">
+                <img src="../assets/location/appartement1.jpg" alt="image appartement">
+            </a>
         </div>
         <div class="description">
             <h3>Contemporary studio</h3>
@@ -180,18 +196,18 @@
                 <div class="properties">
                     <div class="prop">
                         <i class="fa fa-bed" aria-hidden="true"></i>
-                        <span>4</span>
+                        <span class="bed">4</span>
                     </div>
                     <div class="prop">
                         <i class="fa fa-shower" aria-hidden="true"></i>
-                        <span>2</span>
+                        <span class="toilet">2</span>
                     </div>
                     <div class="prop">
                         <i class="fa fa-map-marker" aria-hidden="true"></i>
-                        <span>Dakar</span>
+                        <span class="location">Dakar</span>
                     </div>
                 </div>
-                <h4>25000FCFA</h4>
+                <h4 class="price">25000FCFA</h4>
             </div>
         </div>
     </div>
@@ -201,7 +217,9 @@
             <p class="resume">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, beatae.
             </p>
-            <img src="../assets/location/appartement1.jpg" alt="image appartement">
+            <a class="image-to-detail" id="appartement1" href="details.html">
+                <img src="../assets/location/appartement1.jpg" alt="image appartement">
+            </a>
         </div>
         <div class="description">
             <h3>Contemporary studio</h3>
@@ -209,18 +227,18 @@
                 <div class="properties">
                     <div class="prop">
                         <i class="fa fa-bed" aria-hidden="true"></i>
-                        <span>4</span>
+                        <span class="bed">4</span>
                     </div>
                     <div class="prop">
                         <i class="fa fa-shower" aria-hidden="true"></i>
-                        <span>2</span>
+                        <span class="toilet">2</span>
                     </div>
                     <div class="prop">
                         <i class="fa fa-map-marker" aria-hidden="true"></i>
-                        <span>Dakar</span>
+                        <span class="location">Dakar</span>
                     </div>
                 </div>
-                <h4>25000FCFA</h4>
+                <h4 class="price">25000FCFA</h4>
             </div>
         </div>
     </div>
@@ -230,7 +248,9 @@
             <p class="resume">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, beatae.
             </p>
-            <img src="../assets/location/appartement1.jpg" alt="image appartement">
+            <a class="image-to-detail" id="appartement1" href="details.html">
+                <img src="../assets/location/appartement1.jpg" alt="image appartement">
+            </a>
         </div>
         <div class="description">
             <h3>Contemporary studio</h3>
@@ -238,18 +258,18 @@
                 <div class="properties">
                     <div class="prop">
                         <i class="fa fa-bed" aria-hidden="true"></i>
-                        <span>4</span>
+                        <span class="bed">4</span>
                     </div>
                     <div class="prop">
                         <i class="fa fa-shower" aria-hidden="true"></i>
-                        <span>2</span>
+                        <span class="toilet">2</span>
                     </div>
                     <div class="prop">
                         <i class="fa fa-map-marker" aria-hidden="true"></i>
-                        <span>Dakar</span>
+                        <span class="location">Dakar</span>
                     </div>
                 </div>
-                <h4>25000FCFA</h4>
+                <h4 class="price">25000FCFA</h4>
             </div>
         </div>
     </div>
@@ -263,6 +283,57 @@
     <h2>Pourquoi Nous Choisir ?</h2>
 
 </div>
+
+<!-- =============================== Nous contacter =============================== -->
+<section class="contact-foot">
+    <h2>Nous Contacter</h2>
+    <div class="row">
+      <form action="#">
+        <div class="flex-between">
+          <input class="champ me-lg-5" type="text" name="firstname" id="firstname" placeholder="Prénom *">
+          <input class="champ" type="text" name="lastname" id="lastname" placeholder="Nom *">
+        </div>
+        <div class="flex-between">
+          <input class="champ me-lg-5" type="email" name="email" id="email" placeholder="Email *">
+          <input class="champ" type="tel" name="tel" id="tel" placeholder="Téléphone *">
+        </div>
+        <textarea class="champ" placeholder="Message" name="message" id="message">
+        </textarea>
+        <input class="btn" type="submit" value="Envoyer">
+      </form>
+  
+      <div class="col-lg-4 ms-lg-5 mt-5 coord">
+        <div class="adress d-flex mb-5">
+          <i class="fas fa-map-marker-alt fa-2x mt-1"></i>
+          <div class="ms-lg-5">
+            <h4 class="mb-lg-3">Adresse</h4>
+            <p>Stade Demba Diop<br>
+              Dakar, Sicap, Libeté 2 <br>
+              Senegal
+            </p>
+          </div>
+        </div>
+        <div class="tel d-flex mb-5">
+          <i class="fas fa-phone-alt fa-2x mt-1" aria-hidden="true"></i>
+          <div class="ms-lg-5">
+            <h4 class="mb-lg-3">Téléphone</h4>
+            <p>(221) 77 456 78 90 <br>
+              (221) 77 654 32 10  <br>
+            </p>
+          </div>
+        </div>
+        <div class="email d-flex mb-5">
+          <i class="fas fa-envelope fa-2x mt-1" aria-hidden="true"></i>
+          <div class="ms-lg-5">
+            <h4 class="mb-3">E-mail</h4>
+            <p>simplon@email.com <br>
+              help@simplon.com
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
 
 <!-- =============================== footer =============================== -->
 <footer>
