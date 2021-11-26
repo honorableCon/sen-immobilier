@@ -1,0 +1,85 @@
+.details{
+    padding:20px 10%;
+    // background-color: rgb(220, 247, 244);
+    .detail-item{
+        font-size: 1.3rem;
+        border-radius: 14px;
+        background-color: rgba(234, 236, 238, 0.459);
+        padding: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        .buy{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .btn{
+            margin: auto;
+            background-color: rgb(38, 190, 0);
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: 600;
+        }
+    }
+    .images{
+        margin: 30px 0;
+        display: grid;
+        grid-gap: 20px;
+        grid-auto-flow: column;
+        grid-template-areas: 
+          "A A B"
+          "A A C";
+        .big-image{
+            grid-area: A;
+        }.item-image-top{
+            grid-area: B;
+        }.item-image-bot{
+            border-radius: 14px;
+            grid-area: C;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            background-color: rgba(0, 0, 0, 0.425);
+            img{
+                mix-blend-mode: multiply;
+            }
+            a{
+                font-weight: 500;
+                font-size: 1.6rem;
+                position: absolute;
+                color: #fff;
+            }
+        }
+        img{
+            border-radius: 14px;
+            width: 100%;
+        }
+    }
+    .properties{
+        font-size: 1.4rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        background-color: rgba(234, 236, 238, 0.521);
+        padding: 25px;
+        margin: 20px 0;
+        border-radius: 14px;
+        .prop{
+            font-weight: 600;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            i{
+                color: #4B85F0;
+                margin: 0 12px;
+            }
+            span{
+                opacity: 0.6;
+            }
+        }
+    }
+    .description{
+        font-size: 1.5rem;
+    }
+}

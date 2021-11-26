@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="styles/detail.min.css">
     <script src="utils.js"></script>
     <!-- <script src="https://unpkg.com/yombal-dom@1.0.2/utils.js" crossorigin="anonymous"></script> -->
-    <!-- <script src="https://kit.fontawesome.com/ea05a76d15.js" crossorigin="anonymous"></script> -->
+    <script src="https://kit.fontawesome.com/ea05a76d15.js" crossorigin="anonymous"></script>
     <title>Sen Immobilier</title>
 
     <script src="details.js"></script>
@@ -57,7 +58,102 @@
     </div>
 </div>
 
+<div class="details">
+    <div class="detail-item">
+        <div>
+            <h2>Contemporary studio</h2>
+            <p>Dakar, Sicap Liberté 2</p>
+        </div>
+        <div class="buy">
+            <h3>250000fcfa</h3>
+            <a href="#" class="btn">LOUER</a>
+        </div>        
+    </div>
 
+    <div class="images">
+        <img class="big-image" src="../assets/location/appartement1.jpg" alt="image">
+        <img class="item-image-top" src="../assets/location/appartement1.jpg" alt="">
+        <div class="item-image-bot">
+            <img src="../assets/location/appartement1.jpg" alt="">
+            <a href="#">Plus D'images >></a>
+        </div>
+    </div>
+    <div class="properties">
+        <div class="prop">
+            <i class="fa fa-bed" aria-hidden="true"></i>
+            <span class="bed">4</span>
+        </div>
+        <div class="prop">
+            <i class="fa fa-shower" aria-hidden="true"></i>
+            <span class="toilet">2</span>
+        </div>
+        <div class="prop">
+            <i class="fa fa-utensils" aria-hidden="true"></i>
+            <span class="cuisine">5</span>
+        </div>
+        <div class="prop">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            <span class="location">Dakar</span>
+        </div>
+    </div>
+    <div class="description">
+        <h4>Description</h4>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit eos dignissimos, natus exercitationem laborum voluptates laboriosam voluptas aliquid commodi, accusantium nam ullam nobis consequatur distinctio et temporibus accusamus odio illo!
+        </p>
+    </div>
+</div>
+
+<!-- =============================== Nous contacter =============================== -->
+<section class="contact-foot">
+    <h2>Nous Contacter</h2>
+    <div class="row">
+      <form action="#">
+        <div class="flex-between">
+          <input class="champ me-lg-5" type="text" name="firstname" id="firstname" placeholder="Prénom *">
+          <input class="champ" type="text" name="lastname" id="lastname" placeholder="Nom *">
+        </div>
+        <div class="flex-between">
+          <input class="champ me-lg-5" type="email" name="email" id="email" placeholder="Email *">
+          <input class="champ" type="tel" name="tel" id="tel" placeholder="Téléphone *">
+        </div>
+        <textarea class="champ" placeholder="Message" name="message" id="message">
+        </textarea>
+        <input class="btn" type="submit" value="Envoyer">
+      </form>
+  
+      <div class="col-lg-4 ms-lg-5 mt-5 coord">
+        <div class="adress d-flex mb-5">
+          <i class="fas fa-map-marker-alt fa-2x mt-1"></i>
+          <div class="ms-lg-5">
+            <h4 class="mb-lg-3">Adresse</h4>
+            <p>Stade Demba Diop<br>
+              Dakar, Sicap, Libeté 2 <br>
+              Senegal
+            </p>
+          </div>
+        </div>
+        <div class="tel d-flex mb-5">
+          <i class="fas fa-phone-alt fa-2x mt-1" aria-hidden="true"></i>
+          <div class="ms-lg-5">
+            <h4 class="mb-lg-3">Téléphone</h4>
+            <p>(221) 77 456 78 90 <br>
+              (221) 77 654 32 10  <br>
+            </p>
+          </div>
+        </div>
+        <div class="email d-flex mb-5">
+          <i class="fas fa-envelope fa-2x mt-1" aria-hidden="true"></i>
+          <div class="ms-lg-5">
+            <h4 class="mb-3">E-mail</h4>
+            <p>simplon@email.com <br>
+              help@simplon.com
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
 
 <!-- =============================== footer =============================== -->
 <footer>
