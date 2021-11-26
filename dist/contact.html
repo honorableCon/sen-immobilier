@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="styles/style.min.css">
     <script src="utils.js"></script>
     <!-- <script src="https://unpkg.com/yombal-dom@1.0.2/utils.js" crossorigin="anonymous"></script> -->
-    <!-- <script src="https://kit.fontawesome.com/ea05a76d15.js" crossorigin="anonymous"></script> -->
+    <script src="https://kit.fontawesome.com/ea05a76d15.js" crossorigin="anonymous"></script>
     <title>Sen Immobilier</title>
 </head>
 <body>
@@ -21,14 +21,17 @@
     </div>
     <nav>
         <ul>
-            <li><a href="index.html">Accueil</a></li>
+            <li><a href="#">Accueil</a></li>
             <li><a href="location.html">Locations</a></li>
             <li><a href="ventes.html">Ventes</a></li>
             <li><a class="active" href="contact.html">Contact</a></li>
         </ul>
     </nav>
     <div class="more">
-        le rest
+        <div class="row">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <p>contact@senimmobilier.sn</p>
+        </div>
     </div>
 </header>
 
@@ -43,7 +46,7 @@
         <div class="prices">
             250 000 FCFA
         </div>
-        <button class="more-details">voir details</button>
+        <button href="#" class="btn">voir details</button>
     </div>
     <div class="indication">
         <button class="prev"> 
@@ -56,6 +59,56 @@
     </div>
 </div>
 
+<!-- =============================== Nous contacter =============================== -->
+<section class="contact-foot">
+    <h2>Nous Contacter</h2>
+    <div class="row">
+      <form action="#">
+        <div class="flex-between">
+          <input class="champ me-lg-5" type="text" name="firstname" id="firstname" placeholder="Prénom *">
+          <input class="champ" type="text" name="lastname" id="lastname" placeholder="Nom *">
+        </div>
+        <div class="flex-between">
+          <input class="champ me-lg-5" type="email" name="email" id="email" placeholder="Email *">
+          <input class="champ" type="tel" name="tel" id="tel" placeholder="Téléphone *">
+        </div>
+        <textarea class="champ" placeholder="Message" name="message" id="message">
+        </textarea>
+        <input class="btn" type="submit" value="Envoyer">
+      </form>
+  
+      <div class="col-lg-4 ms-lg-5 mt-5 coord">
+        <div class="adress d-flex mb-5">
+          <i class="fas fa-map-marker-alt fa-2x mt-1"></i>
+          <div class="ms-lg-5">
+            <h4 class="mb-lg-3">Adresse</h4>
+            <p>Stade Demba Diop<br>
+              Dakar, Sicap, Libeté 2 <br>
+              Senegal
+            </p>
+          </div>
+        </div>
+        <div class="tel d-flex mb-5">
+          <i class="fas fa-phone-alt fa-2x mt-1" aria-hidden="true"></i>
+          <div class="ms-lg-5">
+            <h4 class="mb-lg-3">Téléphone</h4>
+            <p>(221) 77 456 78 90 <br>
+              (221) 77 654 32 10  <br>
+            </p>
+          </div>
+        </div>
+        <div class="email d-flex mb-5">
+          <i class="fas fa-envelope fa-2x mt-1" aria-hidden="true"></i>
+          <div class="ms-lg-5">
+            <h4 class="mb-3">E-mail</h4>
+            <p>simplon@email.com <br>
+              help@simplon.com
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
 
 <!-- =============================== footer =============================== -->
 <footer>
